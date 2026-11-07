@@ -1,0 +1,230 @@
+[
+  {
+    "id": "policy-01",
+    "question": "What is the return window for unused items?",
+    "expected_sources": [
+      "Returns"
+    ]
+  },
+  {
+    "id": "policy-02",
+    "question": "Can I return an unused product after two weeks?",
+    "expected_sources": [
+      "Returns"
+    ]
+  },
+  {
+    "id": "policy-03",
+    "question": "What packaging do I need for a return?",
+    "expected_sources": [
+      "Returns"
+    ]
+  },
+  {
+    "id": "policy-04",
+    "question": "Do I need my order number to return something?",
+    "expected_sources": [
+      "Returns"
+    ]
+  },
+  {
+    "id": "policy-05",
+    "question": "How long does standard delivery take?",
+    "expected_sources": [
+      "Delivery"
+    ]
+  },
+  {
+    "id": "policy-06",
+    "question": "When will I receive parcel tracking?",
+    "expected_sources": [
+      "Delivery"
+    ]
+  },
+  {
+    "id": "policy-07",
+    "question": "Is a UK delivery usually three working days?",
+    "expected_sources": [
+      "Delivery"
+    ]
+  },
+  {
+    "id": "policy-08",
+    "question": "Do you email tracking when my parcel ships?",
+    "expected_sources": [
+      "Delivery"
+    ]
+  },
+  {
+    "id": "policy-09",
+    "question": "How long does the warranty cover manufacturing defects?",
+    "expected_sources": [
+      "Warranty"
+    ]
+  },
+  {
+    "id": "policy-10",
+    "question": "Does the warranty include accidental damage?",
+    "expected_sources": [
+      "Warranty"
+    ]
+  },
+  {
+    "id": "policy-11",
+    "question": "Is a manufacturing defect covered after six months?",
+    "expected_sources": [
+      "Warranty"
+    ]
+  },
+  {
+    "id": "policy-12",
+    "question": "When does the warranty start?",
+    "expected_sources": [
+      "Warranty"
+    ]
+  },
+  {
+    "id": "policy-13",
+    "question": "Where can I find my VAT invoice?",
+    "expected_sources": [
+      "Billing"
+    ]
+  },
+  {
+    "id": "policy-14",
+    "question": "Can I download a PDF invoice before payment clears?",
+    "expected_sources": [
+      "Billing"
+    ]
+  },
+  {
+    "id": "policy-15",
+    "question": "How do I download an invoice from my order history?",
+    "expected_sources": [
+      "Billing"
+    ]
+  },
+  {
+    "id": "policy-16",
+    "question": "Do you provide VAT invoices after payment?",
+    "expected_sources": [
+      "Billing"
+    ]
+  },
+  {
+    "id": "policy-17",
+    "question": "How do I reset my password?",
+    "expected_sources": [
+      "Account access"
+    ]
+  },
+  {
+    "id": "policy-18",
+    "question": "How long does the password reset email last?",
+    "expected_sources": [
+      "Account access"
+    ]
+  },
+  {
+    "id": "policy-19",
+    "question": "Where is the link for password recovery?",
+    "expected_sources": [
+      "Account access"
+    ]
+  },
+  {
+    "id": "policy-20",
+    "question": "Will my reset link still work after 30 minutes?",
+    "expected_sources": [
+      "Account access"
+    ]
+  },
+  {
+    "id": "policy-21",
+    "question": "Can I cancel an order that has not shipped?",
+    "expected_sources": [
+      "Order cancellation"
+    ]
+  },
+  {
+    "id": "policy-22",
+    "question": "How do I request an order cancellation?",
+    "expected_sources": [
+      "Order cancellation"
+    ]
+  },
+  {
+    "id": "policy-23",
+    "question": "Can I cancel after dispatch?",
+    "expected_sources": [
+      "Order cancellation"
+    ]
+  },
+  {
+    "id": "policy-24",
+    "question": "Which details does support need to cancel my order?",
+    "expected_sources": [
+      "Order cancellation"
+    ]
+  },
+  {
+    "id": "unknown-01",
+    "question": "Do you offer gift wrapping?",
+    "expected_sources": []
+  },
+  {
+    "id": "unknown-02",
+    "question": "Which payment cards can I use?",
+    "expected_sources": []
+  },
+  {
+    "id": "unknown-03",
+    "question": "Can you ship to Norway?",
+    "expected_sources": []
+  },
+  {
+    "id": "unknown-04",
+    "question": "What are your opening hours?",
+    "expected_sources": []
+  },
+  {
+    "id": "unknown-05",
+    "question": "How do I delete my purchase history?",
+    "expected_sources": []
+  },
+  {
+    "id": "unknown-06",
+    "question": "Can I get a student discount?",
+    "expected_sources": []
+  },
+  {
+    "id": "unknown-07",
+    "question": "Do you repair vintage radios?",
+    "expected_sources": []
+  },
+  {
+    "id": "unknown-08",
+    "question": "How do I join the loyalty programme?",
+    "expected_sources": []
+  },
+  {
+    "id": "unknown-09",
+    "question": "Are the boxes recyclable?",
+    "expected_sources": []
+  },
+  {
+    "id": "unknown-10",
+    "question": "Do you take payment by instalments?",
+    "expected_sources": []
+  },
+  {
+    "id": "unknown-11",
+    "question": "Can you engrave my name on an item?",
+    "expected_sources": []
+  },
+  {
+    "id": "unknown-12",
+    "question": "Can I buy wholesale stock?",
+    "expected_sources": []
+  }
+]
