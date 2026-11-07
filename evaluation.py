@@ -84,7 +84,7 @@ def score_case(case, search, answer):
     }
 
 
-def evaluate(dataset: Dataset, probe: Callable):
+def evaluate(dataset: Dataset, probe: Callable, on_progress: Callable | None = None):
     results = []
     for case in sorted(dataset.cases, key=lambda item: item.id):
         started = perf_counter()
@@ -104,6 +104,8 @@ def evaluate(dataset: Dataset, probe: Callable):
             latency_ms=round((perf_counter() - started) * 1000, 2),
         )
         results.append(result)
+        if on_progress is not None:
+            on_progress(len(results))
 
     summary = {}
     for metric in ("retrieval_hit", "citation_correct", "abstention_correct", "passed"):
