@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Evaluation &amp; Release Gate</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <header><p>SUPPORT QUALITY LAB</p><h1>AI Evaluation &amp; Release Gate</h1></header>
+  <main>
+    <p id="notice" role="status" aria-live="polite"></p>
+    <div class="layout">
+      <section>
+        <h2>Queue an evaluation</h2>
+        <form id="queue">
+          <label>Dataset <select id="dataset" required></select></label>
+          <label>Target <select id="target" required></select></label>
+          <button>Queue run</button>
+        </form>
+        <form id="import">
+          <label>Import labeled cases <input id="file" type="file" accept=".json,application/json" required></label>
+          <button>Import dataset</button>
+        </form>
+      </section>
+      <section>
+        <h2>Run history</h2>
+        <ul id="runs"></ul>
+      </section>
+    </div>
+    <section>
+      <h2>Compare releases</h2>
+      <form id="compare">
+        <label>Baseline <select id="baseline" required></select></label>
+        <label>Candidate <select id="candidate" required></select></label>
+        <button>Evaluate release gate</button>
+      </form>
+      <div id="comparison" aria-live="polite"></div>
+    </section>
+  </main>
+</body>
+</html>

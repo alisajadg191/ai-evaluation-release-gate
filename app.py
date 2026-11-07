@@ -1,16 +1,19 @@
 import os
 from contextlib import asynccontextmanager
+from pathlib import Path
 from typing import Annotated
 
 import psycopg
 from fastapi import FastAPI, HTTPException
-from fastapi.responses import JSONResponse
+from fastapi.responses import FileResponse, JSONResponse
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, StringConstraints
 
 from evaluation import Dataset, compare, load_dataset
 from storage import Store
 from worker import available_targets
 
+STATIC = Path(__file__).with_name("static")
 Version = Annotated[str, StringConstraints(pattern=r"^[0-9a-f]{64}$")]
 
 
@@ -31,6 +34,12 @@ def create_app(dsn=None):
         yield
 
     api = FastAPI(title="AI Evaluation & Release Gate", lifespan=lifespan)
+
+    api.mount("/static", StaticFiles(directory=STATIC), name="static")
+
+    @api.get("/", include_in_schema=False)
+    def dashboard():
+        return FileResponse(STATIC / "index.html")
 
     @api.exception_handler(psycopg.OperationalError)
     async def database_unavailable(_request, _error):
